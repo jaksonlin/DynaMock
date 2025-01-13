@@ -1,0 +1,38 @@
+# Set default behavior to automatically normalize line endings
+* text=auto
+
+# Java source files
+*.java          text diff=java
+*.gradle        text diff=java
+*.gradle.kts    text diff=java
+
+# Windows scripts - need CRLF endings
+*.bat           text eol=crlf
+*.cmd           text eol=crlf
+*.ps1           text eol=crlf
+
+# Unix scripts - need LF endings (including gradlew)
+*.sh            text eol=lf
+gradlew         text eol=lf
+
+# Documentation
+*.md            text diff=markdown
+*.txt           text
+*.xml           text
+*.yml           text
+*.yaml          text
+*.json          text
+*.properties    text
+*.config        text
+
+# Binary files (no line-ending conversion)
+*.jar           binary
+*.war           binary
+*.ear           binary
+*.class         binary
+*.dll           binary
+*.exe           binary
+*.pdf           binary
+*.png           binary
+*.jpg           binary
+*.gif           binary
